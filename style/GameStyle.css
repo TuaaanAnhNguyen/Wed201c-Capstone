@@ -39,7 +39,8 @@ nav ul li a {
 main {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
+    flex-wrap: wrap;
 }
 
 .game-image {
