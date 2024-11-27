@@ -4,6 +4,7 @@ body {
     margin: 0; 
     padding: 0; 
     line-height: 1.6; /* Sets line height for readability */
+    background-color: rgb(23, 23, 24);
 }
 
 /* Styling all the mentioned: header, navigation, main, footer */
