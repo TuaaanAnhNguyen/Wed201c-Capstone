@@ -4,7 +4,6 @@ body {
     margin: 0; 
     padding: 0; 
     line-height: 1.6; /* Sets line height for readability */
-    background-color: rgb(23, 23, 24);
 }
 
 /* Styling all the mentioned: header, navigation, main, footer */
@@ -40,7 +39,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; /* Removes underline from links */
-    color: aqua; /* Sets text color for links */
+    color: rgb(20, 20, 20); /* Sets text color for links */
+    font-weight: bold; /* Sets links' state bold */
 }
 
 .gallery {
