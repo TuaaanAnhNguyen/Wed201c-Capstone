@@ -67,14 +67,14 @@ nav ul li a {
 
 @media (max-width: 768px) { /* Typical width of large tablets and phones in landscape mode */
     .gallery img {
-        width: 65%; 
+        width: 75%; 
         height: auto; /* Maintains aspect ratio */
     }
 }
 
 @media (max-width: 480px) { /* Typical width of phones in portrait mode */
     .gallery img {
-        width: 90%; 
+        width: 100%; 
         height: auto; /* Maintains aspect ratio */
     }
 }
