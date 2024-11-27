@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: #cfc1c1;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: #c5c1c1;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-weight: bold;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Make sure the map is responsive depending on devices */
+.responsive-iframe {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) { /* Typical width of laptops, large tablets, and more */
+    .gallery img {
+        width: 45%; /* Sets image width to 45% of container */
+        height: auto; /* Maintains aspect ratio */
+    }
+}
+
+@media (max-width: 768px) { /* Typical width of large tablets and some phones in landscape mode */
+    .gallery img {
+        width: 75%; /* Sets image width to 75% of container */
+        height: auto; /* Maintains aspect ratio */
+    }
+}
+
+@media (max-width: 480px) { /* Typical width of phones in portrait mode */
+    .gallery img {
+        width: 100%; /* Sets image width to 100% of container */
+        height: auto; /* Maintains aspect ratio */
+    }
+}
