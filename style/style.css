@@ -1,39 +1,39 @@
 /* Fonts */
 body {
     font-family: Arial, Helvetica, sans-serif; /* Sets the font family */
-    margin: 0; 
-    padding: 0; 
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
     line-height: 1.6; /* Sets line height for readability */
 }
 
 /* Styling all the mentioned: header, navigation, main, footer */
 header, nav, main, footer {
-    padding: 20px; 
-    margin: 10px; 
-    border: 5px solid #5336a3; /* Adds a solid border with color */
+    padding: 20px; /* Adds padding inside elements */
+    margin: 10px; /* Adds margin outside elements */
+    border: 5px solid #5336a3; /* Adds a solid border with specified color */
 }
 
 header {
-    text-align: center; 
-    background-color: #cfc1c1; 
+    text-align: center; /* Centers the text */
+    background-color: #cfc1c1; /* Sets background color */
 }
 
 footer {
-    text-align: center; 
-    background-color: #c5c1c1; 
-    padding: 10px; 
-    margin-top: 20px; 
+    text-align: center; /* Centers the text */
+    background-color: #c5c1c1; /* Sets background color */
+    padding: 10px; /* Adds padding inside footer */
+    margin-top: 20px; /* Adds margin above footer */
 }
 
 nav ul {
     list-style: none; /* Removes bullet points */
-    padding: 0; 
-    text-align: center; 
-    background-color: #fff; 
+    padding: 0; /* Removes default padding */
+    text-align: center; /* Centers the navigation items */
+    background-color: #fff; /* Sets background color */
 }
 
 nav ul li {
-    display: inline; /* Displays list items inline, on the same line */
+    display: inline; /* Displays list items inline */
     margin: 0 15px; /* Adds horizontal margin */
 }
 
@@ -58,23 +58,110 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.2); /* Adds shadow to images */
 }
 
-@media (max-width: 1200px) { /* Typical width of laptops, large tablets and more */
+@media (max-width: 1200px) { /* Typical width of laptops, large tablets, and more */
     .gallery img {
-        width: 45%; 
+        width: 45%; /* Sets image width to 45% of container */
         height: auto; /* Maintains aspect ratio */
+    }
+
+    .top-nav {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #000;
+        border-top: 1px solid #ccc;
+    }
+
+    .top-nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .top-nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .top-nav ul li a {
+        font-size: 0.8em;
+    }
+
+    .bottom-nav {
+        display: none;
     }
 }
 
-@media (max-width: 768px) { /* Typical width of large tablets and phones in landscape mode */
+@media (max-width: 768px) { /* Typical width of large tablets and some phones in lanscape mode */
     .gallery img {
-        width: 75%; 
+        width: 75%; /* Sets image width to 65% of container */
         height: auto; /* Maintains aspect ratio */
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #000;
+        border-top: 1px solid #ccc;
+    }
+
+    .bottom-nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .bottom-nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .bottom-nav ul li a {
+        font-size: 0.8em;
     }
 }
 
 @media (max-width: 480px) { /* Typical width of phones in portrait mode */
     .gallery img {
-        width: 100%; 
+        width: 100%; /* Sets image width to 90% of container */
         height: auto; /* Maintains aspect ratio */
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #000;
+        border-top: 1px solid #ccc;
+    }
+
+    .bottom-nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .bottom-nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .bottom-nav ul li a {
+        font-size: 0.8em;
     }
 }
