@@ -56,23 +56,16 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 1200px) { /* Typical width of laptops, large tablets, and more */
-    .gallery img {
-        width: 45%; /* Sets image width to 45% of container */
-        height: auto; /* Maintains aspect ratio */
-    }
-}
-
 @media (max-width: 768px) { /* Typical width of large tablets and some phones in lanscape mode */
-    .gallery img {
-        width: 75%; /* Sets image width to 65% of container */
-        height: auto; /* Maintains aspect ratio */
+    .dog-image {
+        width: 50%; 
+        height: auto; 
     }
 }
 
 @media (max-width: 480px) { /* Typical width of phones in portrait mode */
-    .gallery img {
-        width: 100%; /* Sets image width to 90% of container */
-        height: auto; /* Maintains aspect ratio */
+    .dog-image {
+        width: 60%; 
+        height: auto; 
     }
 }
