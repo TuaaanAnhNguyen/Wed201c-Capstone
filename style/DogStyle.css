@@ -57,15 +57,37 @@ nav ul li a {
 }
 
 @media (max-width: 768px) { /* Typical width of large tablets and some phones in lanscape mode */
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .dog-image {
         width: 50%; 
         height: auto; 
+        margin: 0 0 20px 0;
+        order: 1;
+    }
+
+    .text {
+        order: 2;
     }
 }
 
 @media (max-width: 480px) { /* Typical width of phones in portrait mode */
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .dog-image {
-        width: 60%; 
+        width: 35%; 
         height: auto; 
+        margin: 0 0 20px 0;
+        order: 1;
+    }
+
+    .text {
+        order: 2;
     }
 }
