@@ -69,6 +69,37 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1200px) { /* Typical width of laptops and larger screens */
+    .top-nav {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #000;
+        border-top: 1px solid #ccc;
+    }
+
+    .top-nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .top-nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .top-nav ul li a {
+        font-size: 0.8em;
+    }
+
+    .bottom-nav {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) { /* Typical width of large tablets and some phones in landscape mode */
     .content {
         flex-direction: column;
@@ -90,12 +121,41 @@ nav ul li a {
         order: 3;
         width: 100%;
     }
+
+    .top-nav {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #000;
+        border-top: 1px solid #ccc;
+    }
+
+    .bottom-nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .bottom-nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .bottom-nav ul li a {
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 480px) { /* Typical width of phones in portrait mode */
     .content {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .rhodes-image {
@@ -112,5 +172,34 @@ nav ul li a {
     .map-container {
         order: 3;
         width: 100%;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #000;
+        border-top: 1px solid #ccc;
+    }
+
+    .bottom-nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .bottom-nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .bottom-nav ul li a {
+        font-size: 0.8em;
     }
 }
